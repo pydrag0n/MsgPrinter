@@ -24,6 +24,7 @@ class MessagePrinter:
     GREEN = '\u001b[32m'
     YELLOW = '\u001b[33m'
     ENDC = '\u001b[0m'
+    
     @classmethod
     def error_message(self, msg: str) -> str:
         """
@@ -37,7 +38,6 @@ class MessagePrinter:
         """
         return f"{self.RED}[ERROR]: {self.ENDC}msg"
     
-
     @classmethod
     def info_message(self, msg: str) -> str:
         """
@@ -50,6 +50,7 @@ class MessagePrinter:
             str: The formatted information message in green color.
         """
         return f"{self.GREEN}[INFO]: {self.ENDC}msg"
+    
     @classmethod
     def warning_message(self, msg: str) -> str:
         """
