@@ -7,3 +7,21 @@ This library provides a class called MessagePrinter with methods to print differ
 - warning_message: Prints a warning message in yellow color.
 
 Each method formats the message with the corresponding color based on the color codes provided. You can use this class to easily print colored messages for different types of output.
+
+## install
+```sh
+pip install message_printer
+```
+
+## example
+```python
+from message_printer import MessagePrinter
+
+mp = MessagePrinter()
+
+print(mp.error_message("it's error message"))
+print(mp.info_message("it's info message"))
+print(mp.warning_message("it's warning message"))
+```
+
+#### version: 0.0.1

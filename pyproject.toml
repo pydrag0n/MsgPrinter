@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+package-mode = true
+
+name = "message_printer"
+
+version = "0.0.1"
+
+description = "This library provides a class called MessagePrinter with methods to print different types of messages in colored text."
+
+license = "MIT"
+
+authors = [
+    "Pydrag0n",
+]
