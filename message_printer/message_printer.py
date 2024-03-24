@@ -36,7 +36,7 @@ class MessagePrinter:
         Returns:
             str: The formatted error message in red color.
         """
-        return f"{self.RED}[ERROR]: {self.ENDC}{msg}"
+        return f"{self.RED}[ERROR] {self.ENDC}{msg}"
     
     @classmethod
     def info_message(self, msg: str) -> str:
@@ -49,7 +49,7 @@ class MessagePrinter:
         Returns:
             str: The formatted information message in green color.
         """
-        return f"{self.GREEN}[INFO]: {self.ENDC}{msg}"
+        return f"{self.GREEN}[INFO] {self.ENDC}{msg}"
     
     @classmethod
     def warning_message(self, msg: str) -> str:
@@ -62,5 +62,5 @@ class MessagePrinter:
         Returns:
             str: The formatted warning message in yellow color.
         """
-        return f"{self.YELLOW}[WARNING]: {self.ENDC}{msg}"
+        return f"{self.YELLOW}[WARNING] {self.ENDC}{msg}"
 
