@@ -1,3 +1,6 @@
+![](imgs\logo.png)
+
+
 # MsgPrinter
 
 Простая библиотека для вывода информационных сообщений, и не только
@@ -32,5 +35,6 @@ print(mp.info_message("Информируюущее сообщение", bold=Tr
 print(mp.error_message("Сообщение об ошибке", bold=True))
 print(mp.warning_message("Предупреждающее сообщение"))
 ```
+![output](imgs\output.png)
 
 #### version: 0.0.2
