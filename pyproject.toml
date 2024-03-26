@@ -7,12 +7,12 @@ package-mode = true
 
 name = "message_printer"
 
-version = "0.0.1"
+version = "0.0.2"
 
-description = "This library provides a class called MessagePrinter with methods to print different types of messages in colored text."
+description = "Простая библиотека для вывода информационных сообщений "
 
 license = "MIT"
 
 authors = [
-    "Pydrag0n",
+    "pydrag0n",
 ]
