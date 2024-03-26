@@ -14,7 +14,7 @@ print(mp.info_message("Информируюущее сообщение", bold=Tr
 print(mp.error_message("Сообщение об ошибке", bold=True))
 print(mp.warning_message("Предупреждающее сообщение"))
 ```
-![](imgs/output.png)
+![](imgs\output.png)
 
 ### timer
 
