@@ -42,21 +42,23 @@ class MessagePrinter:
     @staticmethod
     def error_message(msg: str, bold: bool=False) -> str:
         if bold is True:
-            return Font.Style.bold(f"{Font.Style.BOLD}{Font.Color.RED}[ERROR {datetime.now()}] {Font.Color.ENDC}{msg}{Font.Style.ENDS}")
-        return f"{Font.Color.RED}[ERROR {datetime.now()}] {Font.Color.ENDC}{msg}"
+            print(Font.Style.bold(f"{Font.Style.BOLD}{Font.Color.RED}[ERROR {datetime.now()}] {Font.Color.ENDC}{msg}{Font.Style.ENDS}"))
+            return
+        print(f"{Font.Color.RED}[ERROR {datetime.now()}] {Font.Color.ENDC}{msg}")
     
     @staticmethod
     def info_message(msg: str, bold: bool=False) -> str:
         if bold is True:
-            return Font.Style.bold(f"{Font.Color.GREEN}[INFO {datetime.now()}] {Font.Color.ENDC}{msg}")
+            print(Font.Style.bold(f"{Font.Color.GREEN}[INFO {datetime.now()}] {Font.Color.ENDC}{msg}"))
+            return 
         
-        return f"{Font.Color.GREEN}[INFO {datetime.now()}] {Font.Color.ENDC}{msg}"
+        print(f"{Font.Color.GREEN}[INFO {datetime.now()}] {Font.Color.ENDC}{msg}")
     
     @staticmethod       
     def warning_message(msg: str, bold: bool=False) -> str:
         if bold is True:
             return Font.Style.bold(f"{Font.Color.YELLOW}[WARNING {datetime.now()}] {Font.Color.ENDC}{msg}")
-        return f"{Font.Color.YELLOW}[WARNING {datetime.now()}] {Font.Color.ENDC}{msg}"
+        print(f"{Font.Color.YELLOW}[WARNING {datetime.now()}] {Font.Color.ENDC}{msg}")
     
     @staticmethod
     def timer(func):

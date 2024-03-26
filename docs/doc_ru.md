@@ -10,9 +10,9 @@ def textwrite(text):
 
 print(textwrite("hello world"))
 
-print(mp.info_message("Информируюущее сообщение", bold=True)) 
-print(mp.error_message("Сообщение об ошибке", bold=True))
-print(mp.warning_message("Предупреждающее сообщение"))
+mp.info_message("Информируюущее сообщение", bold=True)
+mp.error_message("Сообщение об ошибке", bold=True)
+mp.warning_message("Предупреждающее сообщение")
 ```
 
 ![output](D:/Programming/languages/PYTHON/message_printer/imgs/example.png)
