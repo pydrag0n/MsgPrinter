@@ -35,6 +35,6 @@ print(mp.info_message("Информируюущее сообщение", bold=Tr
 print(mp.error_message("Сообщение об ошибке", bold=True))
 print(mp.warning_message("Предупреждающее сообщение"))
 ```
-![output](imgs\output.png)
+![output](imgs/example.png)
 
 #### version: 0.0.2
